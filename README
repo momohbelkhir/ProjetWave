@@ -1,0 +1,48 @@
+ *Membres du groupe : (Projet_C_2016/2017)
+
+_ *Mohamed BELKHIR*.
+_ n° etu: u21513475.
+   
+
+
+_ Groupe 02 info.
+
+_Autres spécifications :
+
+1- Lancement sans options: './App'
+
+  1:Fichier        1:Ouvrir : Ouvre avec (wave_load) un fichier .wav que l'utilisateur spécifiera, le stoque dans 
+                              une structure de type wave_t.
+                              
+                   2:Enregistrer: dépend de (1:Ouvrir), elle enregistre un fichier déjà ouvert(sous forme:
+                                  1:copie,2:mono,2:stéréo).
+                   3:Informations: Donne les informations du fichier en cours(nom,taille).
+
+  2: Durée et tempo :          1:Inverser : inverse le sens de lecture d'un fichier .wav existant en le stoquant dans
+                                            une structure de type wave_t pour enregisrer cette modification il faut y aller
+                                            vers (2:Enregistrer). (dépends de 1:Ouvrir)
+                               2:Découper : dépends de (1:ouvrir) découpe une source a partir d'une seconde de départ et une 
+                                            durée rentrées par l'utilisateur.
+                               3:Redimentionner: dépend de (1:Ouvrir), elle accélère ou ralentit la duré de la source selon 
+                                                 un ration donné par l'utilisateur. 
+
+ 3:Caneaux        1:canal: dépend de (1:Ouvrir)modifie le nombre de canaux dans un fichier .wav déjà ouvert; un entier sera
+                          rentré par l'utilisateur; et le stoque dans une structure de type wave_t, pour enregisrer cette 
+                          modification il faut y aller vers (2:Enregistrer).  
+
+1- Lancement avec options: 
+
+./App.exe -r : lancement de Inverser mais il faut ouvrir avant avec(ex: -l toto.wav)
+./App.exe -l toto.wav: lancement de Ouvrir qui ouvre le fichier son de nom toto.wav
+./App.exe -s : lancement de Enregistrer qui enregistre le fichier en cours.
+./App.exe -f : lancement de Information
+./App.exe -q : lancement de Quitter
+./App.exe -c entier: lancement de Canal (dépend de -l).
+./App.exe -v ratio : lancement de Rdimensinner.(dépend de -l). 
+./App.exe -m: lancement de mono  (transformer vers mono)(dépend de -l).
+./App.exe -t entier: lancement de stereo (transformer vers stereo)(dépend de -l).
+./App.exe -d entier1 entier2: lancement de decouper (dépend de -l).
+
+Voilà c'est tous ce qu'on a pu réaliser ! merci.
+
+
